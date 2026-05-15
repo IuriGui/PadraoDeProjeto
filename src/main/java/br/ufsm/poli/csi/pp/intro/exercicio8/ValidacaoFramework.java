@@ -11,12 +11,14 @@ public class ValidacaoFramework implements Validator {
 
     public static void main(String[] args) throws ValidationException {
         ClasseExemplo classeExemplo = new ClasseExemplo();
-        //classeExemplo.setId(10000L);
+        classeExemplo.setId(250L);
         classeExemplo.setNome("MeuJSONFramework");
-        classeExemplo.setValor(12.0);
+        classeExemplo.setValor(87D);
 
         ValidacaoFramework validacaoFramework = new ValidacaoFramework();
         validacaoFramework.validate(classeExemplo);
+
+
     }
 
     @SneakyThrows
